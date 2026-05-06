@@ -1,0 +1,19 @@
+{
+  "name": "autonomous-legacy-poster",
+  "version": "1.0.0",
+  "description": "Autonomous Instagram posting agent for Legacy Bookstore with RAG-powered content generation",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "sync": "tsx src/scripts/sync-sheets.ts",
+    "post:dry-run": "tsx src/scripts/dry-run.ts"
+  },
+  "type": "module",
+  "keywords": ["instagram", "automation", "rag", "bookstore"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
